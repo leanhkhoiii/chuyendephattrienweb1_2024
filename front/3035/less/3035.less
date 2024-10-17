@@ -1,0 +1,188 @@
+.type-3035 {
+    .product {
+        display: flex;
+        padding: 20px;
+        margin: 0 20px;
+
+        .product-image {
+            flex: 1;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .product-info {
+            flex: 2;
+            padding-left: 20px;
+
+            .product-title {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .product-price {
+                font-size: 20px;
+                margin: 10px 0;
+
+                .original-price {
+                    text-decoration: line-through;
+                    color: #888;
+                    margin-right: 10px;
+                }
+
+                .discounted-price {
+                    color: #888;
+                    text-decoration: underline;
+                }
+            }
+
+            .product-description {
+                margin: 15px 0;
+                color: #333;
+            }
+
+            .product-quantity {
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+
+                label {
+                    margin-right: 10px;
+                }
+
+                input {
+                    width: 50px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    height: 40px;
+                    font-size: 16px;
+                    margin-right: 10px;
+
+                }
+            }
+
+            .add-to-cart {
+                padding: 10px 20px;
+                background-color: #43c3ea;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #1a5bb8;
+                }
+            }
+        }
+    }
+
+    .product-details {
+        margin-top: 20px;
+        margin: 0 20px;
+
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+
+            .tab {
+                padding: 10px 20px;
+                border: none;
+                background: white;
+                cursor: pointer;
+                color: black;
+
+                &:hover {
+                    color: #2575fc;
+                }
+
+                &.active {
+                    border: 2px solid #2575fc;
+                    background-color: #f0f0f0;
+                    color: #2575fc;
+                    padding: 10px 20px;
+                    margin-bottom: -2px;
+                }
+            }
+        }
+
+        .tab-content {
+            padding: 15px 0;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            .review-form {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin: 5px 0;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    background-color: white;
+                    color: black;
+                }
+
+                .star-rating {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+
+                    input[type="radio"] {
+                        display: none;
+                    }
+
+                    label {
+                        font-size: 30px;
+                        color: #ccc;
+                        cursor: pointer;
+                        transition: color 0.3s ease-in-out;
+                    }
+
+                    input[type="radio"]:checked~label,
+                    label:hover,
+                    label:hover~label {
+                        color: #43c3ea;
+                    }
+
+                    input[type="radio"]:checked~label {
+                        color: #43c3ea;
+                    }
+                }
+
+
+                .submit-btn {
+                    padding: 10px 30px;
+                    background-color: #43c3ea;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    width: fit-content;
+                    transition: background-color 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: #1a5bb8;
+                    }
+                }
+            }
+
+        }
+    }
+}
