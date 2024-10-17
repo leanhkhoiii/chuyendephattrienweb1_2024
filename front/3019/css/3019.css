@@ -1,0 +1,96 @@
+.type-3019 .newsletter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.type-3019 .newsletter-section .newsletter-signup,
+.type-3019 .newsletter-section .latest-post {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.type-3019 .newsletter-section .newsletter-signup {
+  background-color: #2b2d82;
+  color: white;
+  text-align: center;
+}
+.type-3019 .newsletter-section .newsletter-signup h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.type-3019 .newsletter-section .newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.type-3019 .newsletter-section .newsletter-signup form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: black;
+}
+.type-3019 .newsletter-section .newsletter-signup form button {
+  padding: 10px;
+  background-color: #68c419;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+.type-3019 .newsletter-section .newsletter-signup form button:hover {
+  background-color: #2575fc;
+}
+.type-3019 .newsletter-section .latest-post {
+  background-color: #eeeff1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #343b83;
+}
+.type-3019 .newsletter-section .latest-post h3 {
+  margin-bottom: 20px;
+}
+.type-3019 .newsletter-section .latest-post ul {
+  list-style: none;
+  padding: 0;
+}
+.type-3019 .newsletter-section .latest-post ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.type-3019 .newsletter-section .latest-post ul li img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.type-3019 .newsletter-section .latest-post ul li .content {
+  display: flex;
+  flex-direction: column;
+}
+.type-3019 .newsletter-section .latest-post ul li a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  margin-right: auto;
+}
+.type-3019 .newsletter-section .latest-post ul li a:hover {
+  color: #2575fc;
+}
+.type-3019 .newsletter-section .latest-post ul li p {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
